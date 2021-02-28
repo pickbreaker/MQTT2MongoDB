@@ -11,7 +11,7 @@ MQTT_QOS = 2
 MQTT_TOPICS = ("#",)  # Array of topics to subscribe; '#' subscribe to ALL available topics
 
 MQTT_BROKER = os.getenv("MQTT_BROKER", MQTT_BROKER)
-MQTT_PORT = os.getenv("MQTT_PORT", MQTT_PORT)
+MQTT_PORT = int(os.getenv("MQTT_PORT", MQTT_PORT))
 MQTT_KEEPALIVE = os.getenv("MQTT_KEEPALIVE", MQTT_KEEPALIVE)
 MQTT_QOS = os.getenv("MQTT_QOS", MQTT_QOS)
 MQTT_TOPICS = os.getenv("MQTT_TOPICS", MQTT_TOPICS)  # As ENV, comma separated
